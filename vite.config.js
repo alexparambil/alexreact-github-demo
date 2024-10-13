@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vitest.config.ts or vitest.config.js
+import { defineConfig } from 'vitest/config';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  test: {
+    include: ['**/*.{test,spec}.{js,ts,jsx,tsx}'],
+  },
+});
